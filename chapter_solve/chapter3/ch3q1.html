@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Chapter 2</title>
+        <title>Chapter 3</title>
 
         <style>
             h5{
@@ -12,38 +12,43 @@
             span{
                 color: lightseagreen;
             }
+
+            .btn-span{
+                color: white;
+            }
         </style>
         
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
-    <body>
+    <body onload="question('Chapter 3', 'Question 1')">
+
         <div class="container">
             <div class="row mt-5">
                 <div class="col-md-4 mt-4">
-                    <a href="../chapter2.html" class="btn btn-info btn-lg">Go back to Chapter 1 Page</a>
+                    <a href="../chapter3.html" class="btn btn-info btn-lg">Go back to <span class="chapter btn-span"></span> Page</a>
                     <hr>
                     <a href="../../index.html" class="btn btn-primary btn-lg">Go back to Home Page</a>
                 </div>
                 <div class="col-md-8">
                     <div class="container">
                         <div class="jumbotron">
-                            <h5>Chapter 2: </h5>
+                            <h5><span class="chapter"></span></h5>
                             <hr>
-                            <h5><span>Question 1, 2, 3</span> Solution</h5>
+                            <h5><span class="question"></span> Solution</h5>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="row mt-3">
-                <a href="chapter2.js" class="btn btn-primary">To look for the implementation of Question 3</a>
+                <a id="link" href="chapter3.js" class="btn btn-primary">To look for the implementation of <span class="question btn-span"></span></a>
             </div>
         </div>
         
         <!-- Js -->
-        <script src="chapter2.js"></script>
+        <script src="chapter3.js"></script>
 
         <!-- Bootstrap -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
